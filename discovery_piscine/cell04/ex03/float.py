@@ -40,10 +40,10 @@ except ValueError:
         flutuante = False
 
 if flutuante:
-    tipo = "This number is a decimal"
+    tipo = "This number is a decimal\n\n"
 elif inteiro:
-    tipo = "This number is an integer"
+    tipo = "This number is an integer\n\n"
 else:
-    tipo = "Not a number"
+    tipo = "Not a number\n\n"
 
 print(tipo)
