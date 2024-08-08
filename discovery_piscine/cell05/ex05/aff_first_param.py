@@ -4,6 +4,7 @@
 # This program should be executable.
 # The program displays the first string parameter passed, followed by a newline.
 # If there are no parameters, display "none" followed by a newline.
+
 import sys
 
 entrada = len(sys.argv)

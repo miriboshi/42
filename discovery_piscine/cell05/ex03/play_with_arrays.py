@@ -14,4 +14,4 @@ while(contador < len(array_primario)):
     contador = contador + 1
 
 print(list(set(array_primario)))
-print(list(set(array_resultado)))
+print(set(array_resultado))

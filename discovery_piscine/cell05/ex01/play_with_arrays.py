@@ -14,7 +14,7 @@ contador = 0
 while(contador < len(array_primario)):
     novo_valor = array_primario[contador] + 2
     array_resultado.append(novo_valor)
-    contador = contador + 1
+    contador += 1
 
-print(array_primario)
-print(array_resultado)
+print("Original array:", array_primario)
+print("New array:", array_resultado)
