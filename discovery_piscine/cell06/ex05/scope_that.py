@@ -13,41 +13,26 @@ import sys
 def main():
     try:
         entrada = sys.argv
-        if(len(entrada) < 2 ):
+        if(len(entrada) >1 ):
             print("none")
         else:
-            add_one())
+            variavel_string = "teste"
+            variavel_numerica = 1
+            print(f"Valor inicial da variável: {variavel_string}")    
+            variavel_st = add_one(variavel_string)     
+            print(f"Valor da variável após adicionar 1: {variavel_st}")
+            print(f"Valor inicial da variável: {variavel_numerica}")    
+            variavel_int = add_one(variavel_numerica)    
+            print(f"Valor da variável após adicionar 1: {variavel_int}")
+
     except Exception as e:
         print(f"An error occurred: {e}")
         
-
-def add_one(palavra) -> str:
-    try:
-        if len(palavra) > 8:
-            retorno = (palavra[:8])
-        else:
-            retorno = palavra
-        
-        return retorno
-    
-    except Exception as e:
-        return f"Error! {e}"
-    
-    
-def enlarge(palavra) -> str:
-    try:
-        letra = "z"
-        count = len(palavra)
-        while (count < 8):
-            palavra = palavra + letra
-            count += 1        
-                
-        return palavra
-    
-    except Exception as e:
-        return f"Error! {e}"
-
-
+def add_one(valor) -> str:
+    if((type(valor)== int) or (type(valor)== float)):
+        return valor + 1
+    else:
+        return (valor + "1")
 
 
 # Verifica se o script está sendo executado diretamente

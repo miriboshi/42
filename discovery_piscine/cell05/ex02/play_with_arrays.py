@@ -12,10 +12,9 @@ array_primario = [2, 8, 9, 48, 8, 22, -12, 2]
 array_resultado = []
 contador = 0
 while(contador < len(array_primario)):
-    if(array_primario[contador]>5):
-        novo_valor = array_primario[contador] + 2
-        array_resultado.append(novo_valor)
-    contador = contador + 1
+    novo_valor = array_primario[contador] + 2
+    array_resultado.append(novo_valor)
+    contador += 1
 
-print(array_primario)
-print(array_resultado)
+print("Original array:", array_primario)
+print("New array:", array_resultado)
